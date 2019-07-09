@@ -6,12 +6,14 @@ export default class Contador extends Component {
     }
 
     maisUm = () => {
-        this.setState({ numero: this.state.numero + 1 })
+        this.alterarNumero(+1)
+        // this.setState({ numero: this.state.numero + 1 })
         // this.state.numero = this.state.numero + 1
     }
 
     menosUm = () => {
-        this.setState({ numero: this.state.numero - 1 })
+        this.alterarNumero(-1)
+        // this.setState({ numero: this.state.numero - 1 })
     }
 
     alterarNumero = (diferenca) => {
